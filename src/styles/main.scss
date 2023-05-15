@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  background: $dark;
+  color: $white;
+}
+
+h2 {
+  font-family: "Inter";
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #ffffff;
+  margin-bottom: 60px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+p {
+  color: #ffffff;
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 36px;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 12px;
+  }
+}
+
+.subtitle {
+  color: #ffffff;
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.custom {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 460px));
+  gap: 80px;
+  padding: 118px 77px;
+  @media screen and (max-width: 991px) {
+    padding: 80px 55px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 30px 16px;
+    gap: 40px;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+.block {
+  margin-bottom: 40px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
